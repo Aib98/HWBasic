@@ -13,6 +13,7 @@ public class HW6 {
         System.out.println("3. class");
         System.out.println("4. exe");
 
+        System.out.print("Ваш ответ: ");
         Scanner answer = new Scanner(System.in);
         int ans = answer.nextInt();
         if (ans == 3){
@@ -28,9 +29,11 @@ public class HW6 {
         System.out.println("2. push");
         System.out.println("3. clone");
         System.out.println("4. copy");
+
+        System.out.print("Ваш ответ: ");
         Scanner answer2 = new Scanner(System.in);
         int ans2 = answer2.nextInt();
-        if (ans2 == 2){
+        if (ans2 == 3){
             System.out.println("Ваш ответ верный");
             correctCount = correctCount +1;
         } else {System.out.println("Вы ошиблись");
@@ -43,7 +46,7 @@ public class HW6 {
         System.out.println("2. for");
         System.out.println("3. loop");
 
-
+        System.out.print("Ваш ответ: ");
         Scanner answer3 = new Scanner(System.in);
         int num3 = answer3.nextInt();
         if (num3 == 1){
