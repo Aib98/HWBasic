@@ -60,15 +60,16 @@ public class Sort {
         }
         System.out.println();
 
-        Thread.sleep(1000);
-        Instant finish2 = Instant.now(); // Останавливаем таймер 2
-        long speed2 = Duration.between(start, finish2).toMillis(); //Рассчитываем время 2
-        System.out.println("Время работы метода sort: " + speed);
+//        Thread.sleep(1000);
+//        Instant finish2 = Instant.now(); // Останавливаем таймер 2
+//        long speed2 = Duration.between(start, finish2).toMillis(); //Рассчитываем время 2
+//        System.out.println("Время работы метода sort: " + speed);
 
 
-//        final long then2 = System.nanoTime();
-//        TimeUnit.SECONDS.sleep(1);
-//        final  long millis2 = TimeUnit.NANOSECONDS.toMillis(System.nanoTime() - then2);
-//        System.out.println("Время работы: " + millis2 );
+        final long then2 = System.nanoTime();
+        TimeUnit.SECONDS.sleep(1);
+        final  long millis2 = TimeUnit.NANOSECONDS.toMillis(System.nanoTime() - then2);
+        System.out.println("Время работы: " + millis2 );
+        System.out.println("Сравнение методов: " +(speed - millis2));
     }
 }
