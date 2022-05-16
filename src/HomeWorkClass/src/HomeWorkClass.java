@@ -23,10 +23,10 @@ class HomeWorkClass {
             test.wrongCount = 0;
 
 
-            for (int i = 0;  i < element.Questions.length; i++) {
-                System.out.println(element.readQuestions(i));
-                for (int j = 0; j < element.Answers[i].length; j++) {
-                    System.out.println(element.readAnswers(i, j));
+            for (int i = 0;  i < element.Questions[i].length; i++) {
+                System.out.println(element.setQuestions(i));
+                for (int j = 0; j < AnswerData[i].length; j++) {
+                    System.out.println(element.setAnswers(i, j));
                 }
                 System.out.println("Введите ваш ответ:  ");
 

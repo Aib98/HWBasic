@@ -13,4 +13,12 @@ public class Question {
         return rightAnswerIndex;
     }
 
+    public String[] getAnswer() {
+        return Answer;
+    }
+
+
+    public void setAnswer(String[] answer) {
+        Answer = answer;
+    }
 }
