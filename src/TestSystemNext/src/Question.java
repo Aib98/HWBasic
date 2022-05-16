@@ -1,24 +1,33 @@
 public class Question {
-    private String [] Answer;
-    private int rightAnswerIndex;
-    private boolean ask(){
+    private String[] Answer = {"1. cs", "2. java", "3. class", "4. exe",
+            "1. commit", "2. push", "3. clone", "4. copy",
+            "1. While", "2. for", "3. loop"
+    };
+
+    private String[] Questions = {"В файл с каким расширением компилируется java-файл?",
+            "С помощью какой команды git можно получить полную копию удаленного репозитория?",
+            "С помощью какой команды git можно получить полную копию удаленного репозитория?"
+    };
+
+    private boolean ask() {
         return true;
     }
+
+    private int rightAnswerIndex;
 
     public void setRightAnswerIndex(int rightAnswerIndex) {
         this.rightAnswerIndex = rightAnswerIndex;
     }
 
-    public int getRightAnswerIndex() {
-        return rightAnswerIndex;
+    public String[] getAnswer(int position) {
+        return new String[]{Answer[position]};
     }
 
-    public String[] getAnswer() {
-        return Answer;
+    public String[] getQuestions(int position) {
+        return new String[]{Questions[position]};
     }
-
-
-    public void setAnswer(String[] answer) {
-        Answer = answer;
+    protected boolean ask (String userInput){
+        if(Integer.parseInt(userInput) == rightAnswerIndex) return true;
+        return false;
     }
 }
