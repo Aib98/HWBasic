@@ -1,37 +1,5 @@
 import java.util.Scanner;
 
-class Test {
-    int[] correctAnswer;
-    int correctCount;
-    int wrongCount;
-
-    public boolean showText(int ask, int raidAnswer) {
-        if (ask == raidAnswer) {
-            System.out.println("Вы ответили правильно");
-            correctCount = correctCount + 1;
-            return true;
-
-        } else {
-            System.out.println("Вы ошиблись");
-            wrongCount = wrongCount + 1;
-            return false;
-        }
-    }
-}
-
-class Question {
-
-        String[] Questions;
-        String[][] Answers;
-
-
-        public String readQuestions(int num){
-            return Questions[num];
-        }
-        public String readAnswers (int rowNum, int elemPosition){
-            return Answers[rowNum] [elemPosition];
-        }
-}
 class HomeWorkClass {
         public static void main(String [] args) {
             String [] QuestionData = {
@@ -56,8 +24,7 @@ class HomeWorkClass {
 
 
             for (int i = 0;  i < element.Questions.length; i++) {
-                String tempQ = element.readQuestions(i);
-                System.out.println(tempQ);
+                System.out.println(element.readQuestions(i));
                 for (int j = 0; j < element.Answers[i].length; j++) {
                     System.out.println(element.readAnswers(i, j));
                 }
