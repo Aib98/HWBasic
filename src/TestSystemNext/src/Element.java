@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Element {//Element
 //    private String answers = {"1. cs", "2. java", "3. class", "4. exe",
 //            "1. commit", "2. push", "3. clone", "4. copy",
@@ -10,10 +12,10 @@ public class Element {//Element
 //    };
 
     private String questions;
-    private Answer[] answers;
+    private String[] answers;
     private int rightAnswerIndex;
 
-    public Element(String questions, Answer[] answers, int rightAnswerIndex) {
+    public Element(String questions, String[] answers, int rightAnswerIndex) {
         this.questions = questions;
         this.answers = answers;
         this.rightAnswerIndex = rightAnswerIndex;
@@ -27,15 +29,23 @@ public class Element {//Element
         this.rightAnswerIndex = rightAnswerIndex;
     }
 
-//    public String[] getAnswer(int position) {
+    @Override
+    public String toString() {
+        return "Element{" +
+                "questions='" + questions + '\'' +
+                ", answers=" + Arrays.toString(answers) +
+                ", rightAnswerIndex=" + rightAnswerIndex +
+                '}';
+    }
+    //    public String[] getAnswer(int position) {
 //        return new String[]{Answer[position]};
 //    }
 
 //    public String[] getQuestions(int position) {
 //        return new String[]{Questions[position]};
 //    }
-//    protected boolean ask (String userInput){
-//        if(Integer.parseInt(userInput) == rightAnswerIndex) return true;
-//        return false;
-//    }//раскоментировать
+    protected boolean ask (String userInput){
+        if(Integer.parseInt(userInput) == rightAnswerIndex) return true;
+        return false;
+    }//раскоментировать
 }

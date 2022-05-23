@@ -1,9 +1,7 @@
-import java.net.SocketOption;
-
 public class Answer {
     private String text;
 
-    Answer (String text) {
+    Answer() {
         this.text = text;
     }
 

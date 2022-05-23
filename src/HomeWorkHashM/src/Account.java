@@ -1,7 +1,7 @@
 import java.util.Objects;
 
 class Account {
-    public int bill;
+    private int bill;
 
 
     public Account(int bill) {

@@ -3,7 +3,7 @@ public class Test {
     private int rightAnswerCount = 0;
 
     public Test(Element[] questions) {
-        this.questions = questions;
+         this.questions = questions;
     }
 }
 //    public void setRightAnswerCount(int rightAnswerCount) {

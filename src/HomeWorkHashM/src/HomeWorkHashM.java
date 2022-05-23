@@ -43,13 +43,13 @@ import java.util.*;
         personAddresses.put(new Person("Петров", 1999), Arrays.asList(new Account(56215), new Account(77777)));
         personAddresses.put(new Person("Сидоров", 1980), Arrays.asList(new Account(54556), null));
 
+        for (Person person : personAddresses.keySet()) {
+            List<Account> petrov = personAddresses.get(56215);
+            System.out.println(petrov);
 
-        List<Account> petrov = personAddresses.get(56215);
-        System.out.println(petrov);
-
-        String bill = String.valueOf(personAddresses.get("Иванов"));
-        System.out.println(bill);
-
+            String bill = String.valueOf(personAddresses.get("Иванов"));
+            System.out.println(bill);
+        }
 
 //        Set set = personAddresses.entrySet();//Вывод всех клиентов и счетов к нему
 //        Iterator i = set.iterator();
@@ -74,7 +74,7 @@ import java.util.*;
 
 
 
-                
+
 
 //            Person petrov = new Person("Петров", 1999);
 //            Account petrovAddress = (Account) personAccount.get(petrov);
