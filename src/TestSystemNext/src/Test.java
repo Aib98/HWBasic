@@ -1,8 +1,8 @@
 public class Test {
-    private Question[] questions;
+    private Element[] questions;
     private int rightAnswerCount = 0;
 
-    public Test(Question[] questions) {
+    public Test(Element[] questions) {
         this.questions = questions;
     }
 }

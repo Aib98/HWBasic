@@ -1,4 +1,4 @@
-public class Question {//Element
+public class Element {//Element
 //    private String answers = {"1. cs", "2. java", "3. class", "4. exe",
 //            "1. commit", "2. push", "3. clone", "4. copy",
 //            "1. While", "2. for", "3. loop"//убрать вопросы и ответы
@@ -10,10 +10,10 @@ public class Question {//Element
 //    };
 
     private String questions;
-
     private Answer[] answers;
+    private int rightAnswerIndex;
 
-    public Question(String questions, Answer[] answers, int rightAnswerIndex) {
+    public Element(String questions, Answer[] answers, int rightAnswerIndex) {
         this.questions = questions;
         this.answers = answers;
         this.rightAnswerIndex = rightAnswerIndex;
@@ -22,8 +22,6 @@ public class Question {//Element
     private boolean ask() {
         return true;
     }
-
-    private int rightAnswerIndex;
 
     public void setRightAnswerIndex(int rightAnswerIndex) {
         this.rightAnswerIndex = rightAnswerIndex;

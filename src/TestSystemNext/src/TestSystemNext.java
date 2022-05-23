@@ -14,9 +14,9 @@ public class TestSystemNext {
 
 
             Answer answer = new Answer("1");
-            Question question = new Question("3",new Answer[]{answer}, 0);
-            System.out.println(new Question[i]);
-            Test test = new Test(new Question[]{question});
+            Element element = new Element("3","1", rightAnswerIndex.length);
+            System.out.println(element);
+            Test test = new Test(new Element[]{element});
         }
 
     }
