@@ -31,11 +31,9 @@ public class Element {//Element
 
     @Override
     public String toString() {
-        return "Element{" +
-                "questions='" + questions + '\'' +
-                ", answers=" + Arrays.toString(answers) +
-                ", rightAnswerIndex=" + rightAnswerIndex +
-                '}';
+        return "Вопрос:" + questions + '\n' +
+                "  Варианты ответов: " + Arrays.toString(answers) + '\n' +
+                "  Введите ваш ответ: " + rightAnswerIndex;
     }
     //    public String[] getAnswer(int position) {
 //        return new String[]{Answer[position]};
@@ -44,7 +42,7 @@ public class Element {//Element
 //    public String[] getQuestions(int position) {
 //        return new String[]{Questions[position]};
 //    }
-    protected boolean ask (String userInput){
+    public boolean ask (String userInput){
         if(Integer.parseInt(userInput) == rightAnswerIndex) return true;
         return false;
     }//раскоментировать

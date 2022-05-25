@@ -1,7 +1,9 @@
+import java.security.PublicKey;
+
 public class Answer {
     private String text;
 
-    Answer() {
+    public Answer(String text) {
         this.text = text;
     }
 
@@ -9,5 +11,12 @@ public class Answer {
         if (answer) System.out.println(text + "Вы ответили правильно");
         else System.out.println(text + "Вы ошиблись");
     }
+
+//    @Override
+//    public String toString() {
+//        return "Answer{" +
+//                "text='" + text + '\'' +
+//                '}';
+//    }
 }
 

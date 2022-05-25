@@ -39,6 +39,7 @@ import java.util.*;
 //                    }
 //                }
         Map<Person, List<Account>> personAddresses = new HashMap<>();
+
         personAddresses.put(new Person("Иванов", 1985), Arrays.asList(new Account(12345), new Account(54321), new Account(88888)));
         personAddresses.put(new Person("Петров", 1999), Arrays.asList(new Account(56215), new Account(77777)));
         personAddresses.put(new Person("Сидоров", 1980), Arrays.asList(new Account(54556), null));

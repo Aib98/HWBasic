@@ -5,6 +5,9 @@ public class Test {
     public Test(Element[] questions) {
          this.questions = questions;
     }
+
+
+
 }
 //    public void setRightAnswerCount(int rightAnswerCount) {
 //        this.rightAnswerCount = rightAnswerCount;
