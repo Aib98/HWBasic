@@ -5,9 +5,15 @@ public class Test {
     public Test(Element[] questions) {
          this.questions = questions;
     }
+    public void rightCount(){
+        rightAnswerCount++;
+    }
+    public Test(){
+    }
 
-
-
+    public int getRightAnswerCount() {
+        return rightAnswerCount;
+    }
 }
 //    public void setRightAnswerCount(int rightAnswerCount) {
 //        this.rightAnswerCount = rightAnswerCount;
