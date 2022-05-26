@@ -9,13 +9,16 @@ class Person {
         this.berthYear = berthYear;
     }
 
+    public Person() {
+        }
+
 
     @Override
     public String toString() {
-        return "" +
+        return
                 "Клиент: " + name + '\'' +
-                ", год рождения - " + berthYear
-                + ";";
+                "год рождения: " + berthYear +
+                '}';
     }
 
     @Override

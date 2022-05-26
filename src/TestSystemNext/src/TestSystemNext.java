@@ -16,11 +16,14 @@ public class TestSystemNext {
         Test test = new Test();
 
         for (int i = 0; i < allQuestion.length; i++) {
+            // Доработать! - в методе main логика наполнение и создания объектов Element и Answer работает неправильно:
+            //Answer answer = new Answer("Результат - ");
+            //Element element = new Element(allQuestion[i], allAnswer [i], rightAnswerIndex [i]);
 
-            Answer answer = new Answer("Результат - ");
             Element element = new Element(allQuestion[i], allAnswer [i], rightAnswerIndex [i]);
             System.out.println(element);
 
+            Answer answer = new Answer("Результат - ");
             boolean checkedAnswer = element.ask(element.getRightAnswerIndex());
             if (checkedAnswer) test.rightCount();
                 answer.showText(checkedAnswer);

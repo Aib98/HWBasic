@@ -31,7 +31,7 @@ public class Element {
                 "Введите ваш ответ: ";
     }
 
-    public boolean ask (int rightAnswerIndex){
+    public boolean ask (int rightAnswerIndex){// Доработать! в классе Element в метод public boolean ask (int rightAnswerIndex) не стоит передавать аргумент, так как rightAnswerIndex - это уже поле класса
         Scanner scanner = new Scanner(System.in);
         if(Integer.parseInt(scanner.nextLine()) == rightAnswerIndex) {
             return true;

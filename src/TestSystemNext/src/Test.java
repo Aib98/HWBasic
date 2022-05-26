@@ -1,4 +1,4 @@
-public class Test {
+public class Test {//Доработать! - в классе Test надо реализовать метод passTest()
     private Element[] questions;
     private int rightAnswerCount = 0;
 
